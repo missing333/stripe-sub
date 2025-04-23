@@ -8,16 +8,16 @@ import logo from '@/app/icon.png';
 // Stripe Plans >> fill in your own priceId & link
 export const plans = [
     {
-        link: process.env.NODE_ENV === 'development' ? '********' : '',
+        link: process.env.NODE_ENV === 'development' ? 'https://buy.stripe.com/test_8wMcQF5wwaUl1b29AB' : '',
         priceId: process.env.NODE_ENV === 'development' ? '********' : '',
-        price: 19,
+        price: 6.99,
         duration: '/month'
     },
     {
         link: process.env.NODE_ENV === 'development' ? '********' : '',
         priceId: process.env.NODE_ENV === 'development' ? '********' : '',
 
-        price: 99,
+        price: 69,
         duration: '/year'
     }
 ];
@@ -63,7 +63,7 @@ const Pricing = () => {
                                             className="radio"
                                             checked={plan.price === 99}
                                         />
-                                        <span>Pay yearly (60% OFF 💰)</span>
+                                        <span>Pay yearly (20% OFF 💰)</span>
                                     </div>
                                 </div>
 
